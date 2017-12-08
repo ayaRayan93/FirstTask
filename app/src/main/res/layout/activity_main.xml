@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context="com.example.ayaali.firsttask.MainActivity">
+
+
+
+    <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_weight="5"
+          android:layout_gravity="center"
+
+          >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/circularImageView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/a"
+                app:civ_border_color="#EEEEEE"
+                app:civ_border_width="4dp"
+                app:civ_shadow="true"
+                app:civ_shadow_color="#8BC34A"
+
+                app:civ_shadow_radius="10" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:clickable="true"
+                app:fabSize="mini"
+               app:backgroundTint="@color/orange"
+                app:srcCompat="@drawable/camera"
+                android:layout_alignBottom="@id/circularImageView"
+                android:layout_alignRight="@id/circularImageView"
+                android:layout_marginBottom="30dp"
+                />
+
+
+        </RelativeLayout>
+        <TextView
+              android:layout_gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="ايه علي محمد"
+              android:textSize="24sp"
+              android:textColor="@color/colorPrimary"
+              />
+          <TextView
+              android:layout_gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="عثمان ابن عفان"
+              android:textSize="18sp"
+              />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_weight="5"
+          android:weightSum="2"
+          android:padding="10dp"
+          android:background="@color/white"
+
+          >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/calendar"
+
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    >
+                    <TextView
+                        android:layout_gravity="left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Birth Date"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="24sp"
+                        />
+                    <TextView
+                        android:layout_gravity="left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25 Dec 2016 12:00 pm PST"
+                        android:textSize="18sp"
+                        android:textColor="#979797"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:orientation="horizontal"
+              >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/calendar"
+
+                />
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:padding="10dp"
+                  >
+                  <TextView
+                      android:layout_gravity="left"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Age Today"
+                      android:textColor="#000"
+                      android:textStyle="bold"
+                      android:textSize="24sp"
+                      />
+                  <TextView
+                      android:layout_gravity="left"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="5 Year 2 Month 0 Day"
+                      android:textSize="18sp"
+                      android:textColor="#979797"
+                      />
+              </LinearLayout>
+      </LinearLayout>
+
+      </LinearLayout>
+</LinearLayout>
