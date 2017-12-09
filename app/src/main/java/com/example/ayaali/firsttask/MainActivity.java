@@ -12,16 +12,21 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.toolbar)Toolbar toolbar;
+   // @BindView(R.id.toolbar)Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ButterKnife.bind(this);
-        setSupportActionBar(toolbar);
+       // ButterKnife.bind(this);
+       // setSupportActionBar(toolbar);
        //
-        //toolbar.inflateMenu(R.menu.menu);
+        //toolbar.setTitle("hghg");
+       // toolbar.inflateMenu(R.menu.menu);
     }
-
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
 
 }
