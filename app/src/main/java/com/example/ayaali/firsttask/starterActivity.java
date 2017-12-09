@@ -24,6 +24,7 @@ public class starterActivity extends AppCompatActivity {
                 finally {
                     Intent main=new Intent("MainActivity");
                     startActivity(main);
+                    finish();
                 }
             }
 
