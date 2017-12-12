@@ -4,11 +4,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="10"
+    android:weightSum="13"
     android:orientation="vertical"
     tools:context="com.example.ayaali.firsttask.MainActivity">
 
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:padding="5dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:background="#000">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+
+                android:id="@+id/drawer_indicator"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/menu_32"
+                android:layout_marginRight="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:padding="3dp">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/headerLogo"
+                android:layout_toRightOf="@+id/drawer_indicator"
+                android:text="@string/app_name"
+                android:id="@+id/txtHeader"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                android:textAllCaps="true"
+                android:gravity="left"/>
+        </LinearLayout>
+        <View
+            android:id="@+id/View01"
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/headerLogo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/mlogo"/>
+        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
           android:layout_width="match_parent"
@@ -18,10 +80,12 @@
           android:layout_gravity="center"
 
           >
+
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:paddingTop="50dp"
             >
             <com.mikhaellopez.circularimageview.CircularImageView
                 android:id="@+id/circularImageView"
@@ -38,8 +102,8 @@
 
             <android.support.design.widget.FloatingActionButton
                 android:id="@+id/floatingActionButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_weight="5"
                 android:clickable="true"
                 app:fabSize="mini"
@@ -47,7 +111,7 @@
                 app:srcCompat="@drawable/camera"
                 android:layout_alignBottom="@id/circularImageView"
                 android:layout_alignRight="@id/circularImageView"
-                android:layout_marginBottom="30dp"
+                android:layout_marginBottom="25dp"
                 />
 
 
@@ -115,12 +179,14 @@
                         />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:layout_weight="1"
               android:orientation="horizontal"
               >
+
             <ImageView
                 android:layout_width="70dp"
                 android:layout_height="70dp"
@@ -151,6 +217,8 @@
                       android:textColor="#979797"
                       />
               </LinearLayout>
+
+
       </LinearLayout>
 
       </LinearLayout>

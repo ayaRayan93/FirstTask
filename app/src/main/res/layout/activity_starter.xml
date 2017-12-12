@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     tools:context="com.example.ayaali.firsttask.starterActivity">
 <ImageView
-    android:layout_width="match_parent"
-    android:layout_height="567dp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:layout_gravity="center"
     android:id="@+id/imageView2"
     app:srcCompat="@mipmap/unnamed"/>
